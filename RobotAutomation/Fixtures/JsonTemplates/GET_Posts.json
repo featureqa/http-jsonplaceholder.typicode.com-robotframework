@@ -1,0 +1,13 @@
+{
+    "size":
+    {
+        "allposts": "100",
+        "postid": "1"
+    },
+
+    "user":
+    {
+        "id": "3",
+        "postcount": "10"
+    }
+}
