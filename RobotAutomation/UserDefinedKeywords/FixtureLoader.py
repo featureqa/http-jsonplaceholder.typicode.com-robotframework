@@ -16,7 +16,7 @@ def get_global_variables(environmentName, value):
 
 
 def get_expected_value(templatefile, key, value):
-    ftemplate = open('../../Fixtures/JsonTemplates/' + templatefile)
+    ftemplate = open('../../Fixtures/' + templatefile)
     tresponse = json.loads(ftemplate.read())
     tvalue = jsonpath.jsonpath(tresponse,key + '.' + value)
     return tvalue[0]

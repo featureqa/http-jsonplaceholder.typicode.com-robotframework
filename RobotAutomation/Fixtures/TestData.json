@@ -1,0 +1,30 @@
+{
+    "posts":
+    {
+        "validInitial": "1",
+        "validInitCount": "1",
+        "validFinal": "100",
+        "validFinalCount": "1",
+        "InvalidInitial": "0",
+        "InvalidFinal": "101"
+    },
+
+    "users":
+    {
+        "validInitial": "1",
+        "validInitCount": "10",
+        "validFinal": "10",
+        "validFinalCount": "10",
+        "validMid": "5",
+        "validMidCount": "10",
+        "InvalidInitial": "0",
+        "InvalidFinal": "11"
+    },
+
+    "allposts":
+    {
+        "postcount": "100",
+        "postid": "1"
+    }
+
+}
