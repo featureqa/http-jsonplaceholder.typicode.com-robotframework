@@ -175,10 +175,9 @@ VALIDATE FILTERED POST URL RESPONSE MATCHES POST ID URI POST RESPONSE
     ...    Get On Session  GET_With_URI  /posts/${post_list}[0]
     ...  ELSE
     ...    Get On Session  GET_With_URI  /posts/${post_list}[1]
-    ${json_response}=  To Json    ${response.content}
-    ${filteridlist}=  get value from json  ${json_response}  id
-    ${filtertitlelist}=  get value from json  ${json_response}  title
-    ${filterbodylist}=  get value from json  ${json_response}  body
+    ${filteridlist}=  get value from json  ${response.json()}  id
+    ${filtertitlelist}=  get value from json  ${response.json()}  title
+    ${filterbodylist}=  get value from json  ${response.json()}  body
     Lists Should Be Equal    ${filteridlist}    ${uriidlist}
     Lists Should Be Equal    ${filtertitlelist}    ${urititlelist}
     Lists Should Be Equal    ${filterbodylist}    ${uribodylist}
